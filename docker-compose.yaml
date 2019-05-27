@@ -1,0 +1,12 @@
+version: '2'
+
+services:
+  backup:
+    image: gcavalcante8808/pgdump-s3
+    environment:
+     - DB_HOST
+     - DB_USER
+     - DB_PASSWORD
+     - DB_NAME
+     - BACKUP_DIR
+
